@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="styles/navbar.css">
 	<link rel="stylesheet" href="styles/hero.css">
 	<link rel="stylesheet" href="styles/products.css">
+	<link rel="stylesheet" href="styles/footer.css">
 	<title>AluraGeek</title>
 </head>
 
@@ -81,6 +82,52 @@
 			<div class="products-grid" id="Diversos"></div>
 		</div>
 	</section>
+
+	<section class="footer">
+
+		<div class="footer-left">
+			<div class="footer-logo-imgs">
+				<img class="footer-logo-imgs-logo" src="assets/Logo.svg" alt="">
+				<img class="footer-logo-imgs-text" src="assets/TextoLogo.svg" alt="">
+			</div>
+			<ul class="footer-list">
+				<li class="footer-list-item"><a href="#">Quienes Somos</a></li>
+				<li class="footer-list-item"><a href="#">Política de privacidad</a></li>
+				<li class="footer-list-item"><a href="#">Programa de fidelidad</a></li>
+				<li class="footer-list-item"><a href="#">Nuestras tiendas</a></li>
+				<li class="footer-list-item"><a href="#">Quiero ser franquiciado</a></li>
+				<li class="footer-list-item"><a href="#">Anúncie aquí</a></li>
+			</ul>
+		</div>
+
+
+
+		<div class="contact">
+			<h2 class="contact-title">Hable con nosotros</h2>
+			<form class="contact-form">
+				<div class="contact-form-container">
+					<input class="contact-form-container-input" type="text" placeholder="Nombre" id="name" name="name" required
+						maxlength="50">
+					<label class="contact-form-container-label" for="name">Nombre</label>
+				</div>
+				<div class="contact-form-container">
+					<textarea class="contact-form-container-textarea" placeholder="Mensaje" id="message" name="message" required
+						maxlength="300"></textarea>
+					<label class="contact-form-container-label" for="message">Escribe tu mensaje</label>
+				</div>
+				<button class="contact-form-button">Enviar mensaje</button>
+
+			</form>
+		</div>
+
+
+	</section>
+
+	<footer class="footer-footer">
+		<h2>Desarrollado por Gregory Pérez</h2>
+		<h2>2023</h2>
+	</footer>
+
 </body>
 <script type="module" src="./scripts/principalProducts.js"></script>
 

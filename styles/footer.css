@@ -1,0 +1,234 @@
+.footer{
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
+  justify-content: center;
+  padding: 1rem;
+  row-gap: 1rem;
+  background-color: #EAF2FD;
+}
+
+
+.footer-left{
+  display: flex;
+  width: 100%;
+  height: max-content;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-logo-imgs {
+  display: flex;
+  width: 100%;
+  height: 3.13rem;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer-logo-imgs img {
+  height: 45%;
+}
+
+
+.footer-list{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 1rem;
+}
+
+.footer-list-item{
+  width: 100%;
+  text-align: center;
+}
+
+.footer-list-item a{
+  text-decoration: none;
+  color: #464646;
+}
+
+.contact{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  margin-top: 1rem;
+  row-gap: 0.5rem;
+}
+
+.contact-title{
+  width: 100%;
+  color: #464646;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.contact-form{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  row-gap: 0.5rem;
+}
+
+.contact-form-container:first-child{
+  margin-bottom: 0.5rem;
+}
+
+.contact-form-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  width: 100%;
+  height: max-content;
+  outline: none;
+}
+
+.contact-form-container-input::placeholder {
+  visibility: hidden;
+}
+
+.contact-form-container-textarea::placeholder {
+  visibility: hidden;
+}
+
+.contact-form-container-input:not(:placeholder-shown)+.contact-form-container-label,
+.contact-form-container-input:focus+.contact-form-container-label {
+  font-size: 0.75rem !important;
+  top: 0.3rem !important;
+  transition: all 0.3s;
+}
+
+.contact-form-container-textarea:not(:placeholder-shown)+.contact-form-container-label,
+.contact-form-container-textarea:focus+.contact-form-container-label {
+  font-size: 0.75rem !important;
+  top: 0.3rem !important;
+  transition: all 0.3s;
+}
+
+.contact-form-container-input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 3.5rem;
+  padding: 0.5rem 0.75rem;
+  padding-bottom: 0;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  border: none;
+  border-bottom: 1px solid #C8C8C8;
+  outline: none;
+  color: #464646;
+}
+
+.contact-form-container-textarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 5.1rem;
+  padding: 1.3rem 0.75rem 0 0.75rem;
+  padding-bottom: 0;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  border: none;
+  border-bottom: 1px solid #C8C8C8;
+  outline: none;
+  color: #464646;
+}
+
+.contact-form-container-label {
+  position: absolute;
+  top: 1.6rem;
+  left: 0.75rem;
+  width: 100%;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  transition: all 0.3s;
+  color: #464646;
+}
+
+.contact-form-button{
+  width: 8.31rem;
+  height: 2.5rem;
+  background-color: #2A7AE4;
+  color: #fff;
+  border: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+
+.footer-footer{
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #464646;
+  padding: 2rem;
+}
+
+.footer-footer h2{
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer{
+    justify-content: space-between;
+    padding: 2rem;
+  }
+
+  .footer-left{
+    justify-content: flex-start;
+    width: 30%;
+    row-gap: 1rem;
+  }
+
+  .footer-logo-imgs{
+    justify-content: flex-start;
+  }
+
+  .footer-list{
+    row-gap: 1.5rem;
+  }
+
+  .footer-list-item{
+    text-align: left;
+  }
+
+  .contact{
+    width: 65%;
+    height: max-content;
+    margin-top: 0;
+    row-gap: 0.5rem;
+  }
+
+  .contact-title{
+    height: max-content;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer{
+    padding: 4rem 9.5rem;
+    column-gap: 7rem;
+  }
+
+  .footer-left{
+    width: 40%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    column-gap: 7rem;
+  }
+  .contact{
+    width: 50%;
+  }
+
+}
