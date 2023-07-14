@@ -10,6 +10,6 @@ searchBarButton.addEventListener("click", () => {
   } else {
     searchBar.classList.add("navbar-searchbar-inactive");
     searchBar.classList.remove("navbar-searchbar-active");
-    searchBarButtonImg.src = "./assets/search.svg";
+    searchBarButtonImg.src = "./assets/Search.svg";
   }
 });
