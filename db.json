@@ -1,0 +1,148 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "name": "producto XYZ",
+      "price": "$60.00",
+      "category": "StarWars",
+      "description": "producto XYZ de $60.00",
+      "imageUrl": "https://res.cloudinary.com/dmf4n14wf/image/upload/v1689275010/alurageek/starwars/stormtrooper_vgblnc.png"
+    },
+    {
+      "id": 2,
+      "name": "producto XYZ",
+      "price": "$60.00",
+      "category": "StarWars",
+      "description": "producto XYZ de $60.00",
+      "imageUrl": "https://res.cloudinary.com/dmf4n14wf/image/upload/v1689275010/alurageek/starwars/darth_vader_pr1pkk.png"
+    },
+    {
+      "id": 3,
+      "name": "producto XYZ",
+      "price": "$60.00",
+      "category": "StarWars",
+      "description": "producto XYZ de $60.00",
+      "imageUrl": "https://res.cloudinary.com/dmf4n14wf/image/upload/v1689275010/alurageek/starwars/yoda_ctrfmv.png"
+    },
+    {
+      "id": 4,
+      "name": "producto XYZ",
+      "price": "$60.00",
+      "category": "StarWars",
+      "description": "producto XYZ de $60.00",
+      "imageUrl": "https://res.cloudinary.com/dmf4n14wf/image/upload/v1689275010/alurageek/starwars/stormtrooper_2_c9qg3y.png"
+    },
+    {
+      "id": 5,
+      "name": "producto XYZ",
+      "price": "$60.00",
+      "category": "StarWars",
+      "description": "producto XYZ de $60.00",
+      "imageUrl": "https://res.cloudinary.com/dmf4n14wf/image/upload/v1689275010/alurageek/starwars/baby_yoda_y5blfy.png"
+    },
+    {
+      "id": 6,
+      "name": "producto XYZ",
+      "price": "$60.00",
+      "category": "StarWars",
+      "description": "producto XYZ de $60.00",
+      "imageUrl": "https://res.cloudinary.com/dmf4n14wf/image/upload/v1689275010/alurageek/starwars/darth_vader_2_ne61tq.png"
+    },
+    {
+      "id": 7,
+      "name": "Control XYZ",
+      "price": "$60.00",
+      "category": "Consolas",
+      "description": "producto XYZ de $60.00",
+      "imageUrl": "https://res.cloudinary.com/dmf4n14wf/image/upload/v1689275010/alurageek/Consoles/xbox_controller_wzyigg.png"
+    },
+    {
+      "id": 8,
+      "name": "Control y consola XYZ",
+      "price": "$60.00",
+      "category": "Consolas",
+      "description": "producto XYZ de $60.00",
+      "imageUrl": "https://res.cloudinary.com/dmf4n14wf/image/upload/v1689275010/alurageek/Consoles/play_5_lta0y4.png"
+    },
+    {
+      "id": 9,
+      "name": "Consola XYZ",
+      "price": "$60.00",
+      "category": "Consolas",
+      "description": "producto XYZ de $60.00",
+      "imageUrl": "https://res.cloudinary.com/dmf4n14wf/image/upload/v1689275010/alurageek/Consoles/nintendo_lhbhzx.png"
+    },
+    {
+      "id": 10,
+      "name": "Control XYZ",
+      "price": "$60.00",
+      "category": "Consolas",
+      "description": "producto XYZ de $60.00",
+      "imageUrl": "https://res.cloudinary.com/dmf4n14wf/image/upload/v1689275010/alurageek/Consoles/switch_controller_wl9mix.png"
+    },
+    {
+      "id": 11,
+      "name": "Consola XYZ",
+      "price": "$60.00",
+      "category": "Consolas",
+      "description": "producto XYZ de $60.00",
+      "imageUrl": "https://res.cloudinary.com/dmf4n14wf/image/upload/v1689275010/alurageek/Consoles/xbox_ssipyh.png"
+    },
+    {
+      "id": 12,
+      "name": "Game Boy Color",
+      "price": "$60.00",
+      "category": "Consolas",
+      "description": "producto XYZ de $60.00",
+      "imageUrl": "https://res.cloudinary.com/dmf4n14wf/image/upload/v1689275010/alurageek/Consoles/Game_boy_color_sify48.png"
+    },
+    {
+      "id": 13,
+      "name": "Camisa Atari",
+      "price": "$60.00",
+      "category": "Diversos",
+      "description": "producto XYZ de $60.00",
+      "imageUrl": "https://res.cloudinary.com/dmf4n14wf/image/upload/v1689275011/alurageek/Diversos/Camisa_Atari_c3r6sd.png"
+    },
+    {
+      "id": 14,
+      "name": "Camisa SNES",
+      "price": "$60.00",
+      "category": "Diversos",
+      "description": "producto XYZ de $60.00",
+      "imageUrl": "https://res.cloudinary.com/dmf4n14wf/image/upload/v1689275011/alurageek/Diversos/Camisa_snes_m6fkvc.png"
+    },
+    {
+      "id": 15,
+      "name": "Sonic",
+      "price": "$60.00",
+      "category": "Diversos",
+      "description": "producto XYZ de $60.00",
+      "imageUrl": "https://res.cloudinary.com/dmf4n14wf/image/upload/v1689275011/alurageek/Diversos/Sonic_degkvc.png"
+    },
+    {
+      "id": 16,
+      "name": "producto XYZ",
+      "price": "$60.00",
+      "category": "Diversos",
+      "description": "producto XYZ de $60.00",
+      "imageUrl": "https://res.cloudinary.com/dmf4n14wf/image/upload/v1689275011/alurageek/Diversos/Radio_y8wytr.png"
+    },
+    {
+      "id": 17,
+      "name": "Visor VR",
+      "price": "$60.00",
+      "category": "Diversos",
+      "description": "producto XYZ de $60.00",
+      "imageUrl": "https://res.cloudinary.com/dmf4n14wf/image/upload/v1689275011/alurageek/Diversos/vr_mxzezb.png"
+    },
+    {
+      "id": 18,
+      "name": "Pikachu",
+      "price": "$60.00",
+      "category": "Diversos",
+      "description": "producto XYZ de $60.00",
+      "imageUrl": "https://res.cloudinary.com/dmf4n14wf/image/upload/v1689275011/alurageek/Diversos/pikachu_hmnch9.png"
+    }
+  ]
+}
