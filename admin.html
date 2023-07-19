@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="styles/navbar.css">
   <link rel="stylesheet" href="styles/admin/admin.css">
   <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/formValidation/validation.css">
   <title>AluraGeek</title>
 </head>
 
@@ -47,27 +48,38 @@
     <form class="newProduct-form">
       <h2 class="newProduct-form-title">Agregar nuevo producto</h2>
       <div class="newProduct-form-container">
-        <input class="newProduct-form-container-input" type="url" placeholder="URL" id="URL" name="URL" required
+        <input class="newProduct-form-container-input inputV" type="url" placeholder="URL" id="URL" name="URL" required
           maxlength="50">
         <label class="newProduct-form-container-label" for="URL">URL de la imagen</label>
+        <span class="errorMessage">El campo URL no puede estar vacio</span>
       </div>
 
       <div class="newProduct-form-container">
-        <input class="newProduct-form-container-input" type="text" placeholder="Categoria" id="Categoria"
-          name="Categoria" required maxlength="50">
+        <input class="newProduct-form-container-input inputV" type="text" placeholder="Categoria" id="Categoria"
+          name="Categoria" required maxlength="20">
         <label class="newProduct-form-container-label" for="Categoria">Categoria</label>
+        <span class="errorMessage">El campo categoria no puede estar vacio</span>
       </div>
 
       <div class="newProduct-form-container">
-        <input class="newProduct-form-container-input" type="text" placeholder="productName" id="productName"
-          name="productName" required maxlength="50">
+        <input class="newProduct-form-container-input inputV" type="text" placeholder="productName" id="productName"
+          name="productName" required maxlength="20">
         <label class="newProduct-form-container-label" for="productName">Nombre del producto</label>
+        <span class="errorMessage">El campo nombre no puede estar vacio</span>
+      </div>
+
+      <div class="newProduct-form-container">
+        <input class="newProduct-form-container-input inputV" type="number" placeholder="productPrice" id="productPrice"
+          name="productPrice" required>
+        <label class="newProduct-form-container-label" for="productPrice">Precio del producto</label>
+        <span class="errorMessage">El campo precio no puede estar vacio</span>
       </div>
 
       <div class="contact-form-container">
-        <textarea class="newProduct-form-container-textarea" placeholder="description" id="description"
-          name="description" required maxlength="300"></textarea>
+        <textarea class="newProduct-form-container-textarea inputV" placeholder="description" id="description"
+          name="description" required maxlength="150"></textarea>
         <label class="newProduct-form-container-label" for="description">Descripción del producto</label>
+        <span class="errorMessage">El campo descripción no puede estar vacio</span>
       </div>
 
       <button class="newProduct-form-button">Agregar Producto</button>
@@ -123,5 +135,6 @@
 
 <script type="module" src="./scripts/search.js"></script>
 <script type="module" src="./scripts/searchBarDisplay.js"></script>
+<script type="module" src="./scripts/validations.js"></script>
 
 </html>

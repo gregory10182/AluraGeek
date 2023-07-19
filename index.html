@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="styles/hero.css">
 	<link rel="stylesheet" href="styles/products.css">
 	<link rel="stylesheet" href="styles/footer.css">
+	<link rel="stylesheet" href="styles/formValidation/validation.css">
 	<title>AluraGeek</title>
 </head>
 
@@ -59,10 +60,10 @@
 		<div class="products">
 			<div class="products-header">
 				<h2 class="products-header-title">Star Wars</h2>
-				<button class="products-header-button">
+				<a class="products-header-button" href="./search.html?searchCategory=StarWars">
 					ver todo
 					<img src="./assets/arrow.svg" alt="">
-				</button>
+				</a>
 			</div>
 			<div class="products-grid" id="StarWars"></div>
 		</div>
@@ -70,10 +71,10 @@
 		<div class="products">
 			<div class="products-header">
 				<h2 class="products-header-title">Consolas</h2>
-				<button class="products-header-button">
+				<a class="products-header-button" href="./search.html?searchCategory=Consolas">
 					ver todo
 					<img src="./assets/arrow.svg" alt="">
-				</button>
+				</a>
 			</div>
 			<div class="products-grid" id="Consolas"></div>
 		</div>
@@ -81,10 +82,10 @@
 		<div class="products">
 			<div class="products-header">
 				<h2 class="products-header-title">Diversos</h2>
-				<button class="products-header-button">
+				<a class="products-header-button" href="./search.html?searchCategory=Diversos">
 					ver todo
 					<img src="./assets/arrow.svg" alt="">
-				</button>
+				</a>
 			</div>
 			<div class="products-grid" id="Diversos"></div>
 		</div>
@@ -113,14 +114,16 @@
 			<h2 class="contact-title">Hable con nosotros</h2>
 			<form class="contact-form">
 				<div class="contact-form-container">
-					<input class="contact-form-container-input" type="text" placeholder="Nombre" id="name" name="name" required
-						maxlength="50">
+					<input class="contact-form-container-input inputV" type="text" placeholder="Nombre" id="name" name="name"
+						required maxlength="40">
 					<label class="contact-form-container-label" for="name">Nombre</label>
+					<span class="errorMessage">El campo nombre no puede estar vacio</span>
 				</div>
 				<div class="contact-form-container">
-					<textarea class="contact-form-container-textarea" placeholder="Mensaje" id="message" name="message" required
-						maxlength="300"></textarea>
+					<textarea class="contact-form-container-textarea inputV" placeholder="Mensaje" id="message" name="message"
+						required maxlength="120"></textarea>
 					<label class="contact-form-container-label" for="message">Escribe tu mensaje</label>
+					<span class="errorMessage">El campo mensaje no puede estar vacio</span>
 				</div>
 				<button class="contact-form-button">Enviar mensaje</button>
 
@@ -139,5 +142,6 @@
 <script type="module" src="./scripts/principalProducts.js"></script>
 <script type="module" src="./scripts/searchBarDisplay.js"></script>
 <script type="module" src="./scripts/search.js"></script>
+<script type="module" src="./scripts/validations.js"></script>
 
 </html>

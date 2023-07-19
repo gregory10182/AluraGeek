@@ -1,0 +1,19 @@
+.errorMessage {
+  display: none;
+}
+
+.inputContainerInvalid .errorMessage {
+  display: block;
+  margin-top: 0.2rem;
+  padding-left: 0.2rem;
+  font-size: 0.8rem;
+}
+
+.inputContainerInvalid .inputV{
+  border-bottom: 2px solid #FF1F0A;
+  color: #FF1F0A;
+}
+
+.inputContainerInvalid .inputLabel, .errorMessage {
+  color: #FF1F0A;
+}

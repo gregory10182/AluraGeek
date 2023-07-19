@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="styles/navbar.css">
   <link rel="stylesheet" href="styles/login/login.css">
   <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/formValidation/validation.css">
   <title>AluraGeek</title>
 </head>
 
@@ -47,15 +48,17 @@
     <form class="login-form">
       <h2 class="login-form-title">Iniciar Sesión</h2>
       <div class="login-form-container">
-        <input class="login-form-container-input" type="email" placeholder="email" id="email" name="email" required
-          maxlength="50">
+        <input class="login-form-container-input inputV" type="email" placeholder="email" id="email" name="email"
+          required pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
         <label class="login-form-container-label" for="email">Escribir su correo electronico</label>
+        <span class="errorMessage">El campo correo no puede estar vacio</span>
       </div>
 
       <div class="login-form-container">
-        <input class="login-form-container-input" type="password" placeholder="password" id="password" name="password"
-          required maxlength="50">
+        <input class="login-form-container-input inputV" type="password" placeholder="password" id="password"
+          name="password" required maxlength="50">
         <label class="login-form-container-label" for="password">Escribir su contraseña</label>
+        <span class="errorMessage">El campo contraseña no puede estar vacio</span>
       </div>
 
       <button class="login-form-button">Entrar</button>
@@ -111,5 +114,6 @@
 
 <script type="module" src="./scripts/search.js"></script>
 <script type="module" src="./scripts/searchBarDisplay.js"></script>
+<script type="module" src="./scripts/validations.js"></script>i
 
 </html>
