@@ -37,6 +37,9 @@
 }
 
 .hero-info-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 6.6rem;
   height: 2.5rem;
   font-size: 0.875rem;
@@ -45,6 +48,7 @@
   background-color: #2A7AE4;
   color: #fff;
   border: none;
+  text-decoration: none;
 }
 
 
