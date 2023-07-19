@@ -1,0 +1,157 @@
+.productInfo{
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.productInfo-data{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.productInfo-data-img{
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+}
+
+.productInfo-data-texts{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  row-gap: 0.5rem;
+  padding: 1rem;
+  color: #464646;
+}
+
+.productInfo-data-texts-title{
+  font-size: 1.375rem;
+  font-weight: 500;
+  width: 100%;
+}
+
+.productInfo-data-texts-price {
+  font-size: 1rem;
+  font-weight: 700;
+  width: 100%;
+}
+
+.productInfo-data-texts-desc {
+  font-size: 0.875rem;
+  font-weight: 400;
+  width: 100%;
+}
+
+
+.productInfo-similar{
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem;
+  row-gap: 1rem;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.productInfo-similar-products {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  box-sizing: border-box;
+}
+
+.productInfo-similar-products-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.productInfo-similar-products-header-title {
+  color: #464646;
+  font-size: 1.375rem;
+  font-weight: 700;
+}
+
+.productInfo-similar-products-grid {
+  display: grid;
+  width: 100%;
+  justify-items: center;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+@media only screen and (min-width: 768px) {
+
+  .productInfo-data{
+    box-sizing: border-box;
+    padding: 2rem;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    column-gap: 1rem;
+  }
+
+  .productInfo-data-img{
+    width: 15.875rem;
+    height: 9.8125rem;
+  }
+
+  .productInfo-data-texts{
+    width: 27.175rem;
+    height: 100%;
+    padding: 0;
+  }
+
+  .productInfo-similar-products-grid{
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .productInfo-similar{
+    padding: 2rem;
+    padding-top: 0;
+  }
+  
+}
+
+@media only screen and (min-width: 1440px) {
+
+  .productInfo-data {
+    height: max-content;
+    padding: 4rem 9.5rem;
+    column-gap: 1rem;
+  }
+
+  .productInfo-data-img {
+    width: 35rem;
+    height: 25.1875rem;
+  }
+
+  .productInfo-data-texts {
+    width: 35rem;
+    height: auto;
+    padding: 0;
+  }
+
+  .productInfo-data-texts-title{
+    font-size: 3.25rem;
+  }
+
+  .productInfo-data-texts-desc{
+    font-size: 1rem;
+  }
+
+  .productInfo-similar-products-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .productInfo-similar{
+    padding: 4rem 9.5rem;
+    padding-top: 0;
+  }
+}
