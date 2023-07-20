@@ -1,10 +1,10 @@
-import productos from "../services/productos.js";
+import { productServices } from "../services/product-service.js";
 import nuevoProducto from "./divProductMaker.js";
 
 const productsGrid = document.querySelector(".products-grid");
 const productsTitle = document.querySelector(".products-header-title");
 
-const productData = await productos();
+const productData = await productServices.getAll();
 
 const urlParams = new URLSearchParams(window.location.search);
 const searchedProducts = urlParams.get("searchString");

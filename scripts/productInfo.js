@@ -1,13 +1,12 @@
-import producto from "../services/producto.js";
-import productos from "../services/productos.js";
+import { productServices } from "../services/product-service.js";
 import nuevoProducto from "./divProductMaker.js";
 
 const urlParams = new URLSearchParams(window.location.search);
 const productId = urlParams.get("product_id");
 
 console.log(productId);
-const product = await producto(productId);
-const products = await productos();
+const product = await productServices.getOne(productId);
+const products = await productServices.getAll();
 
 console.log(product);
 

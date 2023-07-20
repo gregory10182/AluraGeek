@@ -1,7 +1,7 @@
-import productos from "../services/productos.js";
+import { productServices } from "../services/product-service.js";
 import nuevoProducto from "./divProductMaker.js";
 
-const productData = await productos();
+const productData = await productServices.getAll();
 const starWarsProducts = productData.filter(
   (product) => product.category === "StarWars"
 );
@@ -11,21 +11,6 @@ const consoleProducts = productData.filter(
 const diverseProducts = productData.filter(
   (product) => product.category === "Diversos"
 );
-
-// const nuevoProducto = (name, imageUrl, price, id) => {
-//   const card = document.createElement("div");
-//   const content = `
-// 	<img class="product-img" src="${imageUrl}" alt="">
-// 	<h1 class="product-name">${name}</h1>
-// 	<p class="product-price">${price}</p>
-// 	<a class="product-link" href="#">Ver Producto</a>`;
-
-//   card.innerHTML = content;
-//   card.classList.add("product");
-//   card.dataset.id = id;
-
-//   return card;
-// };
 
 const starWars = document.querySelector("#StarWars");
 starWarsProducts.forEach((product) => {
