@@ -86,6 +86,21 @@
   text-decoration: none;
 }
 
+.navbar-adminMenuButton{
+  display: flex;
+  box-sizing: border-box;
+  padding: 0.75rem;
+  justify-content: center;
+  align-items: center;
+  width: 10.375rem;
+  height: 2.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #2A7AE4;
+  border: 1px solid #2A7AE4;
+  text-decoration: none;
+}
+
 .navbar-search{
   display: flex;
   justify-content: center;
@@ -205,6 +220,15 @@
   .navbar-button {
     width: 9.38rem;
     padding: 1rem 1rem;
+  }
+
+  .navbar-adminMenuButton {
+    box-sizing: border-box;
+    padding: 0.75rem;
+    width: 11.4375rem;
+    height: 3.1875rem;
+    font-size: 1rem;
+    font-weight: 400;
   }
 
 }

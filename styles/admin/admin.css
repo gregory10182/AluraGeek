@@ -1,170 +1,52 @@
-.newProduct {
+.products-header{
+  flex-wrap: wrap;
+  row-gap: 1rem;
+}
+
+.products-header-newProduct{
   display: flex;
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  background-color: #F5F5F5;
-}
-
-.newProduct-form {
-  display: flex;
-  box-sizing: border-box;
-  flex-wrap: wrap;
-  row-gap: 1rem;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 1rem;
-  width: 100%;
-}
-
-.newProduct-form-title {
-  color: #464646;
-  font-size: 1.375rem;
-  font-weight: 700;
-  align-self: flex-start;
-}
-
-.newProduct-form-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  box-sizing: border-box;
-  width: 100%;
-  height: max-content;
-  outline: none;
-}
-
-.newProduct-form-container-input::placeholder {
-  visibility: hidden;
-}
-
-.newProduct-form-container-textarea::placeholder {
-  visibility: hidden;
-}
-
-.newProduct-form-container-input:not(:placeholder-shown)+.newProduct-form-container-label,
-.newProduct-form-container-input:focus+.newProduct-form-container-label {
-  font-size: 0.75rem !important;
-  top: 0.3rem !important;
-  transition: all 0.3s;
-}
-
-.newProduct-form-container-textarea:not(:placeholder-shown)+.newProduct-form-container-label,
-.newProduct-form-container-textarea:focus+.newProduct-form-container-label {
-  font-size: 0.75rem !important;
-  top: 0.3rem !important;
-  transition: all 0.3s;
-}
-
-.newProduct-form-container-input {
-  box-sizing: border-box;
-  width: 100%;
-  height: 3.5rem;
-  padding: 0.5rem 0.75rem;
-  padding-bottom: 0;
-  font-weight: 400;
-  font-size: 0.9rem;
-  line-height: 1.25rem;
-  border: none;
-  border-radius: 0.25rem;
-  border-bottom: 1px solid #C8C8C8;
-  outline: none;
-  color: #464646;
-}
-
-.newProduct-form-container-textarea {
-  box-sizing: border-box;
-  width: 100%;
-  height: 5.1rem;
-  padding: 1.3rem 0.75rem 0 0.75rem;
-  padding-bottom: 0;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.25rem;
-  border: none;
-  border-bottom: 1px solid #C8C8C8;
-  outline: none;
-  color: #464646;
-}
-
-.newProduct-form-container-label {
-  position: absolute;
-  top: 1.2rem;
-  left: 0.75rem;
-  width: 100%;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.25rem;
-  transition: all 0.15s;
-  color: #A2A2A2;
-}
-
-.newProduct-form-button {
-  width: 100%;
-  padding: 1rem;
+  padding: 0.75rem 1rem;
+  width: 9.375rem;
+  height: 2.5rem;
   background-color: #2A7AE4;
   color: #fff;
-  border: none;
-  font-family: "Raleway", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
 }
 
-
-@media only screen and (min-width: 768px) {
-
-  .newProduct-form{
-    padding: 2rem;
-  }
-
+.product{
+  position: relative;
 }
 
-@media only screen and (min-width: 1024px) {
-
-  .newProduct-form{
-    padding: 4rem 15rem;
-    row-gap: 1.5rem;
-  }
+.product-del{
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 0.5rem;
+  right: 3rem;
+  background-image: url("../../assets/delete.svg");
 }
+
+.product-edit {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-image: url("../../assets/edit.svg");
+}
+
 
 @media only screen and (min-width: 1440px) {
-
-  .newProduct-form {
-    padding: 4rem 27.53rem;
-    row-gap: 1.5rem;
-  }
-
-  .newProduct-form-title {
-    font-size: 1.125rem;
-  }
-
-  .newProduct-form-container-input:not(:placeholder-shown)+.login-form-container-label,
-  .newProduct-form-container-input:focus+.login-form-container-label {
-    font-size: 0.9rem !important;
-    top: 0.5rem !important;
-    transition: all 0.3s;
-  }
-
-  .newProduct-form-container-textarea:not(:placeholder-shown)+.login-form-container-label,
-  .newProduct-form-container-textarea:focus+.login-form-container-label {
-    font-size: 0.9rem !important;
-    top: 0.5rem !important;
-    transition: all 0.3s;
-  }
-
-  .newProduct-form-container-input {
-    height: 3.95rem;
+  .products-header-newProduct{
+    padding: 1rem 0.8rem;
+    width: 10.1875rem;
+    height: 3.1875rem;
     font-size: 1rem;
-  }
-
-  .newProduct-form-container-label {
-    top: 1.6rem;
-  }
-
-  .newProduct-form-button {
-    width: 100%;
-    height: 3.875rem;
+    font-weight: 400;
   }
 }
