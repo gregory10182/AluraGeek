@@ -111,6 +111,10 @@
     padding: 4rem 9.5rem;
   }
 
+  .products-header-title{
+    font-size: 2rem;
+  }
+
   .products-grid{
     grid-template-columns: repeat(6, 1fr);
   }

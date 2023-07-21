@@ -148,14 +148,14 @@
 
   "users": [
     {
-      "id": 1,
       "email": "user1@alurageek.com",
-      "password": "user1"
+      "password": "$2a$10$hqDnQ5j8ux/Cj048omZ7iOoVs5MtCDlLK01N8ezEqOWJ5mTmTTvse",
+      "id": 1
     },
     {
-      "id": 2,
       "email": "user2@alurageek.com",
-      "password": "user2"
+      "password": "$2a$10$LnyUld1Cjw5D89sBYKp/1.EMZC87nVMEks7lLR9ZFmAgOJOVhYkZS",
+      "id": 2
     }
   ]
 }

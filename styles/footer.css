@@ -219,6 +219,7 @@
   .footer{
     padding: 4rem 9.5rem;
     column-gap: 7rem;
+    flex-wrap: nowrap;
   }
 
   .footer-left{

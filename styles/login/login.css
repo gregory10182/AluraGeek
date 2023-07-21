@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 5.5rem 2.5rem;
+  height: 22.62rem;
   background-color: #F5F5F5;
 }
 
@@ -85,6 +85,16 @@
   font-weight: 600;
 }
 
+@media only screen and (min-width: 768px) {
+  .login{
+    height: auto;
+    min-height: 31.8rem;
+  }
+
+  .login-form-button {
+    width: 100%;
+  }
+}
 
 @media only screen and (min-width: 1024px) {
 
