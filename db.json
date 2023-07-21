@@ -144,5 +144,18 @@
       "description": "Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam",
       "imageUrl": "https://res.cloudinary.com/dmf4n14wf/image/upload/v1689275011/alurageek/Diversos/pikachu_hmnch9.png"
     }
+  ],
+
+  "users": [
+    {
+      "id": 1,
+      "email": "user1@alurageek.com",
+      "password": "user1"
+    },
+    {
+      "id": 2,
+      "email": "user2@alurageek.com",
+      "password": "user2"
+    }
   ]
 }
