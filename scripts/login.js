@@ -14,6 +14,8 @@ loginForm.addEventListener("submit", async (e) => {
     data.get("password")
   );
 
-  localStorage.setItem("tkn", login.accessToken);
-  location.href = "../admin.html";
+  if (typeof login === "object") {
+    localStorage.setItem("tkn", login.accessToken);
+    location.href = "../admin.html";
+  } else console.log(login);
 });

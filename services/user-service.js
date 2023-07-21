@@ -10,7 +10,8 @@ const login = async (email, password) => {
     }),
   })
     .then((res) => res.json())
-    .then((res) => res);
+    .then((res) => res)
+    .catch((err) => err);
 };
 
 export const userServices = {
