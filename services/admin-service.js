@@ -10,16 +10,30 @@ const getAll = async (tkn) => {
     .catch((err) => console.log(err));
 };
 
-const getOne = async (tkn, id) => {
-  return await fetch(
-    `https://alurageekapi.gregorypf.site/660/productos/${id}`,
-    {
-      method: "GET",
-      headers: {
-        Authorization: `Bearer ${tkn}`,
-      },
-    }
-  )
+const createProduct = async (
+  tkn,
+  name,
+  price,
+  category,
+  description,
+  imageUrl,
+  id
+) => {
+  return await fetch(`https://alurageekapi.gregorypf.site/660/productos`, {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${tkn}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      id,
+      name,
+      price: `$${price}`,
+      category,
+      description,
+      imageUrl,
+    }),
+  })
     .then((res) => res.json())
     .then((res) => res)
     .catch((err) => console.log(err));
@@ -27,5 +41,5 @@ const getOne = async (tkn, id) => {
 
 export const adminServices = {
   getAll,
-  getOne,
+  createProduct,
 };

@@ -51,16 +51,15 @@
     <form class="newProduct-form">
       <h2 class="newProduct-form-title">Agregar nuevo producto</h2>
       <div class="newProduct-form-container">
-        <input class="newProduct-form-container-input inputV" type="url" placeholder="URL" id="URL" name="URL" required
-          maxlength="50">
+        <input class="newProduct-form-container-input inputV" type="url" placeholder="URL" id="URL" name="URL" required>
         <label class="newProduct-form-container-label" for="URL">URL de la imagen</label>
         <span class="errorMessage">El campo URL no puede estar vacio</span>
       </div>
 
       <div class="newProduct-form-container">
-        <input class="newProduct-form-container-input inputV" type="text" placeholder="Categoria" id="Categoria"
-          name="Categoria" required maxlength="20">
-        <label class="newProduct-form-container-label" for="Categoria">Categoria</label>
+        <input class="newProduct-form-container-input inputV" type="text" placeholder="Category" id="Category"
+          name="Category" required maxlength="20">
+        <label class="newProduct-form-container-label" for="Category">Categoria</label>
         <span class="errorMessage">El campo categoria no puede estar vacio</span>
       </div>
 
@@ -139,5 +138,9 @@
 <script type="module" src="./scripts/search.js"></script>
 <script type="module" src="./scripts/searchBarDisplay.js"></script>
 <script type="module" src="./scripts/validations.js"></script>
+<script type="module" src="./scripts/newProduct.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+  integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </html>
