@@ -1,7 +1,5 @@
 import { userServices } from "../services/user-service.js";
 
-const login = await userServices.login("user1@alurageek.com", "user1");
-
 const loginForm = document.querySelector(".login-form");
 
 loginForm.addEventListener("submit", async (e) => {
@@ -15,7 +13,7 @@ loginForm.addEventListener("submit", async (e) => {
   );
 
   if (typeof login === "object") {
-    localStorage.setItem("tkn", login.accessToken);
+    localStorage.setItem("tkn", JSON.stringify(login));
     location.href = "../admin.html";
   } else console.log(login);
 });

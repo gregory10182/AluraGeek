@@ -86,6 +86,32 @@
   text-decoration: none;
 }
 
+.navbar-loggedUser{
+  display: flex;
+  width: 5rem;
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.navbar-loggedUser-id{
+  color: #2A7AE4;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.navbar-loggedUser-logout{
+  background-image: url(../assets/logout.png);
+  background-color: #fff;
+  border: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
 .navbar-adminMenuButton{
   display: flex;
   box-sizing: border-box;

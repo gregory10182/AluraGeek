@@ -1,9 +1,9 @@
 import { adminServices } from "../services/admin-service.js";
 import adminProductMaker from "./divProductAdminMaker.js";
 
-const tkn = localStorage.getItem("tkn");
+const tkn = JSON.parse(localStorage.getItem("tkn"));
 
-const data = await adminServices.getAll(tkn);
+const data = await adminServices.getAll(tkn.accessToken);
 
 const productsGrid = document.querySelector(".products-grid");
 
