@@ -1,6 +1,8 @@
 import { productServices } from "../services/product-service.js";
 import nuevoProducto from "./divProductMaker.js";
 
+let width;
+
 const productData = await productServices.getAll();
 const starWarsProducts = productData.filter(
   (product) => product.category === "StarWars"
@@ -13,22 +15,55 @@ const diverseProducts = productData.filter(
 );
 
 const starWars = document.querySelector("#StarWars");
-starWarsProducts.forEach((product) => {
-  starWars.appendChild(
-    nuevoProducto(product.name, product.imageUrl, product.price, product.id)
-  );
-});
-
 const Consolas = document.querySelector("#Consolas");
-consoleProducts.forEach((product) => {
-  Consolas.appendChild(
-    nuevoProducto(product.name, product.imageUrl, product.price, product.id)
-  );
-});
-
 const Diversos = document.querySelector("#Diversos");
-diverseProducts.forEach((product) => {
-  Diversos.appendChild(
-    nuevoProducto(product.name, product.imageUrl, product.price, product.id)
-  );
-});
+
+const placeProducts = () => {
+  width = window.innerWidth;
+  console.log(width);
+
+  starWars.textContent = "";
+  Consolas.textContent = "";
+  Diversos.textContent = "";
+  if (width <= 1024) {
+    starWarsProducts.slice(0, 4).forEach((product) => {
+      starWars.appendChild(
+        nuevoProducto(product.name, product.imageUrl, product.price, product.id)
+      );
+    });
+
+    consoleProducts.slice(0, 4).forEach((product) => {
+      Consolas.appendChild(
+        nuevoProducto(product.name, product.imageUrl, product.price, product.id)
+      );
+    });
+
+    diverseProducts.slice(0, 4).forEach((product) => {
+      Diversos.appendChild(
+        nuevoProducto(product.name, product.imageUrl, product.price, product.id)
+      );
+    });
+  } else {
+    starWarsProducts.slice(0, 6).forEach((product) => {
+      starWars.appendChild(
+        nuevoProducto(product.name, product.imageUrl, product.price, product.id)
+      );
+    });
+
+    consoleProducts.slice(0, 6).forEach((product) => {
+      Consolas.appendChild(
+        nuevoProducto(product.name, product.imageUrl, product.price, product.id)
+      );
+    });
+
+    diverseProducts.slice(0, 6).forEach((product) => {
+      Diversos.appendChild(
+        nuevoProducto(product.name, product.imageUrl, product.price, product.id)
+      );
+    });
+  }
+};
+
+placeProducts();
+
+window.addEventListener("resize", placeProducts);
