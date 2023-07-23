@@ -78,7 +78,6 @@ const editProduct = async (
       }),
     }
   )
-    .then((res) => res.json())
     .then((res) => res)
     .catch((err) => console.log(err));
 };

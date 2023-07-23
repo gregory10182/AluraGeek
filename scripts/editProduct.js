@@ -22,7 +22,7 @@ newProductForm.addEventListener("submit", async (e) => {
 
   const data = new FormData(e.target);
 
-  const product = await adminServices.editProduct(
+  const response = await adminServices.editProduct(
     tkn.accessToken,
     data.get("productName"),
     data.get("productPrice"),
@@ -32,10 +32,10 @@ newProductForm.addEventListener("submit", async (e) => {
     productToEdit.id
   );
 
-  if (typeof product === "object") {
-    console.log(product);
+  if (response.status === 200) {
+    console.log(response.status);
     location.href = "./admin.html";
   } else {
-    console.log(product);
+    console.log(response);
   }
 });
