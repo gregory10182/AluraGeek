@@ -139,6 +139,7 @@
   border-bottom: 1px solid #C8C8C8;
   outline: none;
   color: #464646;
+  resize: none;
 }
 
 .contact-form-container-label {

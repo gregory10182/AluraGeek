@@ -6,7 +6,7 @@ export default function adminProductMaker(name, imageUrl, price, id) {
 	<p class="product-price">${price}</p>
 	<a class="product-link" href="./product.html?product_id=${id}">Ver Producto</a>
   <a class="product-del" href="#"></a>
-  <a class="product-edit" href="#"></a>`;
+  <a class="product-edit" href="./editProduct.html?product_id=${id}"></a>`;
 
   card.innerHTML = content;
   card.classList.add("product");
