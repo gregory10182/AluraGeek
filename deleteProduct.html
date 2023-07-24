@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="/styles/index.css">
+  <link rel="stylesheet" href="styles/navbar.css">
+  <link rel="stylesheet" href="styles/deleteProduct/deleteProduct.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/formValidation/validation.css">
+  <title>AluraGeek</title>
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="navbar-logo">
+      <a href="./index.html" class="navbar-logo-imgs">
+        <img class="navbar-logo-imgs-logo" src="assets/Logo.svg" alt="">
+        <img class="navbar-logo-imgs-text" src="assets/TextoLogo.svg" alt="">
+      </a>
+
+      <div class="navbar-searchbar">
+        <input class="navbar-searchbar-input" type="text" placeholder="¿Qué deseas buscar?" name="" id="">
+        <button class="navbar-searchbar-button">
+          <img class="navbar-search-img" src="assets/Search.svg" alt="">
+        </button>
+      </div>
+    </div>
+
+
+    <a class="navbar-adminMenuButton" href="./admin.html">Menú Administrador</a>
+
+    <button class="navbar-search">
+      <img class="navbar-search-img" src="assets/Search.svg" alt="">
+    </button>
+
+    <div class="navbar-searchbar-inactive">
+      <input class="navbar-searchbar-input" type="text" placeholder="¿Qué deseas buscar?" name="" id="">
+      <button class="navbar-searchbar-button">
+        <img class="navbar-search-img" src="assets/Search.svg" alt="">
+      </button>
+    </div>
+  </header>
+
+  <section class="deleteProduct">
+    <img class="deleteProduct-img" src="" alt="">
+    <div class="deleteProduct-texts">
+      <p class="deleteProduct-texts-id"></p>
+      <p class="deleteProduct-texts-name"></p>
+    </div>
+    <div class="deleteProduct-buttons">
+      <h2 class="deleteProduct-title">Esta seguro que desea eliminarlo?</h2>
+      <button class="deleteProduct-buttons-yes">Si</button>
+      <button class="deleteProduct-buttons-no">no</button>
+    </div>
+
+  </section>
+
+  <section class="footer">
+
+    <div class="footer-left">
+      <div class="footer-logo-imgs">
+        <img class="footer-logo-imgs-logo" src="assets/Logo.svg" alt="">
+        <img class="footer-logo-imgs-text" src="assets/TextoLogo.svg" alt="">
+      </div>
+      <ul class="footer-list">
+        <li class="footer-list-item"><a href="#">Quienes Somos</a></li>
+        <li class="footer-list-item"><a href="#">Política de privacidad</a></li>
+        <li class="footer-list-item"><a href="#">Programa de fidelidad</a></li>
+        <li class="footer-list-item"><a href="#">Nuestras tiendas</a></li>
+        <li class="footer-list-item"><a href="#">Quiero ser franquiciado</a></li>
+        <li class="footer-list-item"><a href="#">Anúncie aquí</a></li>
+      </ul>
+    </div>
+
+
+
+    <div class="contact">
+      <h2 class="contact-title">Hable con nosotros</h2>
+      <form class="contact-form">
+        <div class="contact-form-container">
+          <input class="contact-form-container-input" type="text" placeholder="Nombre" id="name" name="name" required
+            maxlength="50">
+          <label class="contact-form-container-label" for="name">Nombre</label>
+        </div>
+        <div class="contact-form-container">
+          <textarea class="contact-form-container-textarea" placeholder="Mensaje" id="message" name="message" required
+            maxlength="300"></textarea>
+          <label class="contact-form-container-label" for="message">Escribe tu mensaje</label>
+        </div>
+        <button class="contact-form-button">Enviar mensaje</button>
+
+      </form>
+    </div>
+
+
+  </section>
+
+  <footer class="footer-footer">
+    <h2>Desarrollado por Gregory Pérez</h2>
+    <h2>2023</h2>
+  </footer>
+
+</body>
+
+<script type="module" src="./scripts/search.js"></script>
+<script type="module" src="./scripts/searchBarDisplay.js"></script>
+<script type="module" src="./scripts/validations.js"></script>
+<script type="module" src="./scripts/deleteProduct.js"></script>
+
+</html>

@@ -20,12 +20,11 @@ const Diversos = document.querySelector("#Diversos");
 
 const placeProducts = () => {
   width = window.innerWidth;
-  console.log(width);
 
   starWars.textContent = "";
   Consolas.textContent = "";
   Diversos.textContent = "";
-  if (width <= 1024) {
+  if (width < 1440) {
     starWarsProducts.slice(0, 4).forEach((product) => {
       starWars.appendChild(
         nuevoProducto(product.name, product.imageUrl, product.price, product.id)
