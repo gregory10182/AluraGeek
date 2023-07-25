@@ -1,0 +1,38 @@
+.messageAlert{
+  position: fixed;
+  padding: 1.5rem;
+  top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  max-width: 15rem;
+  height: max-content;
+  border-radius: 0.5rem;
+  border: 1px solid #2A7AE4;
+
+  background-color: #fff;
+}
+
+.messageAlert-text{
+  word-wrap: break-word;
+  width: max-content;
+  max-width: 13rem;
+  height: max-content;
+  color: #464646;
+  font-size: 1.375rem;   
+  font-weight: 600;
+}
+
+
+
+@media only screen and (min-width: 1440px) {
+  .messageAlert{
+    top: 8rem;
+    max-width: 25rem; 
+  }
+
+  .messageAlert-text{
+    max-width: 21rem;
+  }
+}

@@ -9,7 +9,6 @@ const login = async (email, password) => {
       password: password,
     }),
   })
-    .then((res) => res.json())
     .then((res) => res)
     .catch((err) => err);
 };
