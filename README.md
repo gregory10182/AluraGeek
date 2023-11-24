@@ -1,14 +1,15 @@
-# AluraGeek 
-Alurageek es un proyecto realizado participando del programa ONE (Oracle Next Education) de Oracle y Alura, Basicamente es una pagina que simula un E-Commerce donde lo principal era aplicar lo aprendido en el area de Front-End con JavaScript vanilla, realizando un CRUD Basico con el cual pudieramos ver, ingresar, editar o eliminar productos junto con un login y registro simple, por el lado del Back-end se utilizo Json-Server para que el challenge estuviera centrado en el Front-End.
+# 🚀 AluraGeek 
 
-Yo en lo personal quize ir un poco mas alla y aunque no es mucho añadi al sistema de login una capa de autenticacion por medio de tokens con Json-Server-Auth que aplica a Json-Server los middlewares necesarios para utilizar JWT.
+AluraGeek es un proyecto que se realizó participando en el programa ONE (Oracle Next Education) de Oracle y Alura. 🎓 Básicamente, es una página que simula un E-Commerce. 🛍️ El objetivo principal era aplicar lo aprendido en el área de Front-End con JavaScript vanilla, realizando un CRUD básico con el cual pudiéramos ver, ingresar, editar o eliminar productos junto con un inicio de sesión y registro simple. 🖥️
 
-## Tecnologias
+En lo personal, quise ir un poco más allá y aunque no es mucho, añadí al sistema de inicio de sesión una capa de autenticación por medio de tokens con Json-Server-Auth que aplica a Json-Server los middlewares necesarios para utilizar JWT. 🔐
+
+## 🛠️ Tecnologías Utilizadas
 
 **Front-End:**
- - HTML
- - CSS
- - JavaScript
+ - HTML: 📝 Utilizado para estructurar el contenido de la página web.
+ - CSS: 🎨 Usado para estilizar y diseñar la página.
+ - JavaScript: ⚙️ Implementado para agregar interactividad a la página.
 
- **Back-End:**
- - Json Server Auth
+**Back-End:**
+ - Json Server Auth: 🔒 Se utilizó para añadir una capa de autenticación al sistema de inicio de sesión.
