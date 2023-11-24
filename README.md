@@ -1,4 +1,4 @@
-#🎮🌟 AluraGeek
+# AluraGeek 🎮
 
 AluraGeek es un proyecto que se realizó participando en el programa ONE (Oracle Next Education) de Oracle y Alura. 🎓 Básicamente, es una página que simula un E-Commerce. 🛍️ El objetivo principal era aplicar lo aprendido en el área de Front-End con JavaScript vanilla, realizando un CRUD básico con el cual pudiéramos ver, ingresar, editar o eliminar productos junto con un inicio de sesión y registro simple. 🖥️
 
